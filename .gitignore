@@ -43,7 +43,7 @@ cabal.project.local~
 .ghc.environment.*
 
 ###
-# ☕ node ☕
+# ☕ node+ts ☕
 ###
 
 # Logs
@@ -176,3 +176,7 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# dependency code lockfiles
+package-lock.json
+yarn.lock
