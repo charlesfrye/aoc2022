@@ -7,6 +7,7 @@ help: ## get a list of all the targets, and their short descriptions
 
 
 rust-dir: ## set up a subfolder for a rust solution for the given $DAY
-	mkdir -p rust/aoc${DAY}
-	cp -r rust/aoc00/src rust/aoc00/.devcontainer rust/aoc${DAY}
-	echo "run cargo init inside the devcontainer to get started"
+	@$(eval from := rust/aoc00)
+	@$(eval target := rust/aoc${DAY})
+	mkdir -p $(target)
+	cp -r $(from)/src $(from)/answer.sh $(from)/Makefile $(from)/input.txt $(from)/test.txt $(from)/Cargo.toml $(from)/.devcontainer $(target)
