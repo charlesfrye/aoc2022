@@ -9,5 +9,8 @@
 	"exclude": [
 		"out",
 		"node_modules"
+	],
+	"include": [
+		"*.ts"
 	]
 }

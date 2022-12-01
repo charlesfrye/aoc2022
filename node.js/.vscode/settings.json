@@ -1,11 +1,10 @@
 {
     "eslint.validate": [
-        "javascript",
         "typescript"
     ],
     "eslint.workingDirectories": [
         {
-            "directory": "./test-project",
+            "directory": "./aoc*",
             "changeProcessCWD": true
         }
     ]
