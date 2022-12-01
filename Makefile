@@ -19,3 +19,11 @@ haskell-dir: ## set up a subfolder for a haskell solution for the given $DAY
 	cp -r $(from)/Makefile $(from)/answer.sh $(target)
 	@echo "NEXT: enter $(target) and run 'stack new --bare aoc${DAY}'"
 	@echo "      then change DAY in answer.sh from 00 to ${DAY}"
+
+node-dir: ## set up a subfolder for a node.js solution for the given $DAY
+	@$(eval from := node.js)
+	@$(eval target := node.js/aoc${DAY})
+	mkdir -p $(target)
+	cp  $(from)/Makefile $(target)
+	cp  $(from)/aoc01/answer.sh $(target)
+	@echo "NEXT: enter $(target) and run make environment"
