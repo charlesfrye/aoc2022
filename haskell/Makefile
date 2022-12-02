@@ -7,7 +7,5 @@ help:  ## get a list of all the targets, and their short descriptions
 
 
 solution:  ## print the answers to both parts and their tests
+	stack build
 	./answer.sh
-
-tests:  ## run just tests
-	stack --verbosity error test
