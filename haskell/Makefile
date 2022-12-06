@@ -9,3 +9,7 @@ help:  ## get a list of all the targets, and their short descriptions
 solution:  ## print the answers to both parts and their tests
 	stack build
 	./answer.sh
+
+
+environment:  ## set up the project
+	stack new --bare aoc
