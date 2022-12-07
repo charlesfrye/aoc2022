@@ -15,3 +15,4 @@ environment:  ## finish env setup
 	npm install eslint typescript ts-node
 	eslint --init
 	npm install @typescript-eslint/eslint-plugin @typescript-eslint/parser
+	@echo "now add the key 'project' with value './aocXX/tsconfig.json' to the .eslintrc.json parserOptions"

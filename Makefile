@@ -25,4 +25,5 @@ node-dir: ## set up a subfolder for a node.js solution for the given $DAY
 	mkdir -p $(target)
 	cp  $(from)/Makefile $(target)
 	cp  $(from)/aoc01/answer.sh $(target)
+	cp  $(from)/aoc01/tsconfig.json $(target)
 	@echo "NEXT: enter $(target) and run make environment"
