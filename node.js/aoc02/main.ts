@@ -72,14 +72,14 @@ const playsSecondStyle = contents.split('\n').map(
   }
 )
 
-function scorePlay(play: [RPS, RPS]): number {
+function scorePlay (play: [RPS, RPS]): number {
   const outcome = getOutcome(play)
   const outcomeScore = outcomeScoreMap.get(outcome) ?? 0
   const playScore = playScoreMap.get(play[0]) ?? 0
   return outcomeScore + playScore
 }
 
-function getOutcome(play: [RPS, RPS]): Outcome {
+function getOutcome (play: [RPS, RPS]): Outcome {
   const [myPlay, theirPlay] = play
   if (myPlay === theirPlay) {
     return Outcome.Draw
@@ -97,7 +97,7 @@ function getOutcome(play: [RPS, RPS]): Outcome {
   return Outcome.Lose
 }
 
-function getPlay(myOutcome: Outcome, theirPlay: RPS): RPS {
+function getPlay (myOutcome: Outcome, theirPlay: RPS): RPS {
   if (myOutcome === Outcome.Win) {
     if (theirPlay === RPS.Rock) {
       return RPS.Paper
